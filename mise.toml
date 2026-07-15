@@ -1,0 +1,5 @@
+[env]
+PATH_add = ".venv/bin"
+
+[tools]
+python = "3.12.12"

@@ -1,0 +1,46 @@
+# --- Python/Environment ---
+.venv/
+env/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Data/Model Storage (Crucial for CS336) ---
+# Ignore the directories where you keep large datasets and checkpoints
+data/
+datasets/
+logs/
+checkpoints/
+models/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# --- OS/IDE Junk ---
+.DS_Store
+.vscode/
+.idea/
+.env
+
+# --- Temporary/Build files ---
+dist/
+build/
+*.egg-info/
+
+# Large data files - kept on disk, not tracked in git
+data/TinyStories-train.txt
+data/train.bin
+data/val.bin
+data/*.txt
+!data/.gitkeep
+
+# Model checkpoints
+04_training/checkpoints/*.pt
+!04_training/checkpoints/.gitkeep

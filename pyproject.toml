@@ -1,0 +1,29 @@
+# 1. Build System: Tells pip how to build your project
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# 2. Project Metadata: Identity of your "master" package
+[project]
+name = "cs336_workspace"
+version = "0.1.0"
+description = "My CS336 coursework and experiments"
+requires-python = ">=3.12"
+dependencies = [
+    "torch",
+    "numpy",
+    "matplotlib",
+]
+
+# 3. Optional Dependencies: For dev tools you don't need in prod
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+    "regex",
+]
+
+# 4. Tool configuration: e.g., tell setuptools where your source code is
+[tool.setuptools.packages.find]
+   where = ["src"]
