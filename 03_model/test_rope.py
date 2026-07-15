@@ -1,5 +1,5 @@
 import torch
-from rope import build_rope_cache, apply_rope
+from cs336_workspace.rope import build_rope_cache, apply_rope
 
 def test_position_zero_is_unrotated():
     cos, sin = build_rope_cache(block_size=10, head_dim=8)

@@ -1,5 +1,5 @@
 import torch
-from swiglu import SwiGLU
+from cs336_workspace.swiglu import SwiGLU
 
 def test_output_shape_matches_input():
     ff = SwiGLU(n_embd=384)

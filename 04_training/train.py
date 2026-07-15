@@ -1,8 +1,8 @@
 import time
 import math
 import torch
-from model import TinyStoriesLM
-from batching import get_batch
+from cs336_workspace.model import TinyStoriesLM
+from cs336_workspace.batching import get_batch
 
 # ---------- Config (all decisions locked in during design) ----------
 
@@ -84,7 +84,7 @@ for step in range(MAX_STEPS):
     for param_group in optimizer.param_groups:
         param_group["lr"] = lr
 
-    x, y = get_batch("train", BATCH_SIZE, BLOCK_SIZE, device=DEVICE)
+    x, y = get_batch("data/train", BATCH_SIZE, BLOCK_SIZE, device=DEVICE)
 
     _, loss = model(x, y)
     optimizer.zero_grad(set_to_none=True)

@@ -1,5 +1,5 @@
 import torch
-from model import TinyStoriesLM
+from cs336_workspace.model import TinyStoriesLM
 
 def test_forward_output_shapes():
     model = TinyStoriesLM(vocab_size=100, n_layer=2, n_head=2, n_embd=16, block_size=32)

@@ -1,6 +1,6 @@
 import torch
-from block import TransformerBlock
-from rope import build_rope_cache
+from cs336_workspace.block import TransformerBlock
+from cs336_workspace.rope import build_rope_cache
 
 def test_output_shape_matches_input():
     block = TransformerBlock(n_embd=384, n_head=6, block_size=256)

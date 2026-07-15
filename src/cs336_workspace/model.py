@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-from rmsnorm import RMSNorm
-from rope import build_rope_cache
-from block import TransformerBlock
+from cs336_workspace.rmsnorm import RMSNorm
+from cs336_workspace.rope import build_rope_cache
+from cs336_workspace.block import TransformerBlock
 
 class TinyStoriesLM(nn.Module):
     def __init__(

@@ -8,7 +8,7 @@ def get_batch(split: str, batch_size: int, block_size: int, device: str = "mps")
     x: input tokens, shape (batch_size, block_size)
     y: target tokens, shape (batch_size, block_size) - same as x shifted by 1
     """
-    filename = "train.bin" if split == "train" else "val.bin"
+    filename = "data/train.bin" if split == "train" else "data/val.bin"
     data = np.memmap(filename, dtype=np.uint16, mode="r")
 
     max_start = len(data) - block_size - 1

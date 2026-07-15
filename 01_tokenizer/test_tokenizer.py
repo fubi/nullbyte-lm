@@ -1,5 +1,5 @@
 import pytest
-from tokenizer.tokenizer import (
+from cs336_workspace.tokenizer import (
     Tokenizer, TokenizerError,
     pretokenize, chunk_to_byte_ids, get_stats, merge,
     NUM_BASE_BYTES,

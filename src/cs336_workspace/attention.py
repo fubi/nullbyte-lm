@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from rope import apply_rope
+from cs336_workspace.rope import apply_rope
 
 class CausalSelfAttention(nn.Module):
     def __init__(self, n_embd: int, n_head: int, block_size: int, dropout: float = 0.1):

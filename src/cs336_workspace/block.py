@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-from rmsnorm import RMSNorm
-from attention import CausalSelfAttention
-from swiglu import SwiGLU
+from cs336_workspace.rmsnorm import RMSNorm
+from cs336_workspace.attention import CausalSelfAttention
+from cs336_workspace.swiglu import SwiGLU
 
 class TransformerBlock(nn.Module):
     def __init__(self, n_embd: int, n_head: int, block_size: int, dropout: float = 0.1):

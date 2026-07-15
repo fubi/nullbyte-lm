@@ -1,5 +1,5 @@
 import torch
-from rmsnorm import RMSNorm
+from cs336_workspace.rmsnorm import RMSNorm
 
 def test_rmsnorm_output_has_unit_rms_at_init():
     norm = RMSNorm(dim=8)
