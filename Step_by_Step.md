@@ -1,6 +1,3 @@
-It is completely normal to feel like everything is a hurdle when you are starting a deep dive like CS336. You aren't just learning "how to code"; you are essentially reversing engineering the foundational infrastructure of modern AI. To get that "warm-up" feeling, you need to break the wall down into smaller, manageable blocks.
-
-Here is a recommended approach to scratching your head on these three pillars without burning out.
 
 ### 1. The Python/Systems Hurdle
 
